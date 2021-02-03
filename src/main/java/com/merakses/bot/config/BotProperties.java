@@ -1,4 +1,4 @@
-package com.bot.config;
+package com.merakses.bot.config;
 
 public class BotProperties {
     public static final String BOT_USERNAME_VARIABLE = "BOT_USERNAME";

@@ -1,6 +1,6 @@
-package com.bot.commands.impl;
+package com.merakses.bot.commands.impl;
 
-import com.bot.commands.Command;
+import com.merakses.bot.commands.Command;
 import org.telegram.telegrambots.bots.DefaultAbsSender;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;

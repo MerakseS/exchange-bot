@@ -1,4 +1,4 @@
-package com.bot.exception;
+package com.merakses.bot.exception;
 
 public class ExchangeBotException extends RuntimeException {
 

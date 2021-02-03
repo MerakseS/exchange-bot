@@ -1,4 +1,4 @@
-package com.bot.commands;
+package com.merakses.bot.commands;
 
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 

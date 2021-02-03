@@ -1,6 +1,6 @@
-package com.bot;
+package com.merakses.bot;
 
-import com.bot.config.BotProperties;
+import com.merakses.bot.config.BotProperties;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;

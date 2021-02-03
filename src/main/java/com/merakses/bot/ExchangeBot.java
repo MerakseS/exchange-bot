@@ -1,11 +1,10 @@
-package com.bot;
+package com.merakses.bot;
 
-import com.bot.commands.Command;
-import com.bot.commands.impl.InfoCommand;
-import com.bot.commands.impl.StartCommand;
-import com.bot.commands.impl.UsdCommand;
-import com.bot.config.BotProperties;
-import com.bot.exception.ExchangeBotException;
+import com.merakses.bot.commands.Command;
+import com.merakses.bot.commands.impl.InfoCommand;
+import com.merakses.bot.commands.impl.UsdCommand;
+import com.merakses.bot.config.BotProperties;
+import com.merakses.bot.exception.ExchangeBotException;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
