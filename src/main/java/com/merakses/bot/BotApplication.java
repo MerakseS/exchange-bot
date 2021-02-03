@@ -17,7 +17,7 @@ public class BotApplication {
     }
 
     private static void initBot() throws TelegramApiException {
-        BotProperties botProperties = new BotProperties();
+            BotProperties botProperties = new BotProperties();
 
         TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
         botsApi.registerBot(new ExchangeBot(botProperties));

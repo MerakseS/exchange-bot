@@ -142,4 +142,4 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
-.idea/runConfigurations/Bot.xml
+.idea

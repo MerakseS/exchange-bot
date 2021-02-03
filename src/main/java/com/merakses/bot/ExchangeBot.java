@@ -55,7 +55,7 @@ public class ExchangeBot extends TelegramLongPollingBot {
                 command = new InfoCommand(this, message.getChatId());
                 break;
             case USD_COMMAND:
-                command = new UsdCommand();
+                command = new UsdCommand(this, message.getChatId());
                 break;
             default:
                 return;
@@ -65,14 +65,7 @@ public class ExchangeBot extends TelegramLongPollingBot {
 
     private void handleException(Exception exception, Message message) {
         try {
-            String errorMessage;
-            if (exception instanceof ExchangeBotException) {
-                errorMessage = exception.getMessage();
-            } else {
-                errorMessage = "Critical error! Code: " + UUID.randomUUID().toString();
-            }
-
-            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), errorMessage);
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), exception.getMessage());
             sendMessage.setReplyToMessageId(message.getMessageId());
             this.execute(sendMessage);
 
